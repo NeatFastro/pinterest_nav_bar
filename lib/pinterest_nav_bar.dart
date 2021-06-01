@@ -5,6 +5,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+/// [items] are of type "IconData"
 class PinterestNavBar extends StatefulWidget {
   final Color backgroundColor;
   final Color darkThemeBackgroundColor;
@@ -171,6 +172,8 @@ class PinterestNavBarControllerState extends ChangeNotifier {
   }
 }
 
+/// Wrap your MaterialApp widget with this
+/// This widget tells the [PinterestNavBar] when to hide/show transition
 class PinterestNavBarController extends StatelessWidget {
   final Widget child;
 
