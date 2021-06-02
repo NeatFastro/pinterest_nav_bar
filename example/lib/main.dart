@@ -7,15 +7,18 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  final TextStyle textStyle = TextStyle(fontWeight: FontWeight.bold);
+
   @override
   Widget build(BuildContext context) {
     return PinterestNavBarController(
       child: MaterialApp(
         title: 'Pinterest Nav Bar Example',
         home: Pages(),
+        themeMode: ThemeMode.light,
         theme: ThemeData(
           brightness: Brightness.light,
-          // primaryColor: Colors.white,
+          primaryColor: Colors.white,
           // scaffoldBackgroundColor: Colors.grey.shade100,
           // bottomNavigationBarTheme: BottomNavigationBarThemeData(
           //   backgroundColor: Colors.white,
@@ -29,17 +32,19 @@ class MyApp extends StatelessWidget {
             ),
             labelColor: Colors.white,
             unselectedLabelColor: Colors.black,
+            labelStyle: textStyle,
+            unselectedLabelStyle: textStyle,
           ),
         ),
         darkTheme: ThemeData(
           brightness: Brightness.dark,
-        //   primaryColor: Colors.black,
-        //   scaffoldBackgroundColor: Colors.black87,
-        //   bottomNavigationBarTheme: BottomNavigationBarThemeData(
-        //     backgroundColor: Colors.black,
-        //     selectedItemColor: Colors.pink,
-        //     unselectedItemColor: Colors.pink[100],
-        //   ),
+          primaryColor: Colors.black,
+          scaffoldBackgroundColor: Colors.black87,
+          //   bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          //     backgroundColor: Colors.black,
+          //     selectedItemColor: Colors.pink,
+          //     unselectedItemColor: Colors.pink[100],
+          //   ),
           tabBarTheme: TabBarTheme(
             indicator: BoxDecoration(
               color: Colors.white,
@@ -47,6 +52,8 @@ class MyApp extends StatelessWidget {
             ),
             labelColor: Colors.black,
             unselectedLabelColor: Colors.white,
+            labelStyle: textStyle,
+            unselectedLabelStyle: textStyle,
           ),
         ),
       ),

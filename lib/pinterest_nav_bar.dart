@@ -113,36 +113,36 @@ class _PinterestNavBarState extends State<PinterestNavBar> {
                                     widget.unselectedItemColor
                                 : theme.unselectedItemColor ??
                                     widget.darkThemeUnselectedItemColor,
-                      //   size: () {
-                      //     if (hovering) {
-                      //       if (hoveringItemIndex == i) {
-                      //         return iconSize * 1.4;
-                      //       } else {
-                      //         return iconSize;
-                      //       }
-                      //     } else {
-                      //       return iconSize;
-                      //     }
-                      //   }(),
-                      //   color: () {
-                      //     if (widget.currentIndex == i) {
-                      //       if (brightness == Brightness.light) {
-                      //         return theme.selectedItemColor ??
-                      //             widget.selectedItemColor;
-                      //       } else {
-                      //         return theme.selectedItemColor ??
-                      //             widget.darkThemeselectedItemColor;
-                      //       }
-                      //     } else {
-                      //       if (brightness == Brightness.light) {
-                      //         return theme.unselectedItemColor ??
-                      //             widget.darkThemeUnselectedItemColor;
-                      //       } else {
-                      //         return theme.unselectedItemColor ??
-                      //             widget.darkThemeUnselectedItemColor;
-                      //       }
-                      //     }
-                      //   }(),
+                        //   size: () {
+                        //     if (hovering) {
+                        //       if (hoveringItemIndex == i) {
+                        //         return iconSize * 1.4;
+                        //       } else {
+                        //         return iconSize;
+                        //       }
+                        //     } else {
+                        //       return iconSize;
+                        //     }
+                        //   }(),
+                        //   color: () {
+                        //     if (widget.currentIndex == i) {
+                        //       if (brightness == Brightness.light) {
+                        //         return theme.selectedItemColor ??
+                        //             widget.selectedItemColor;
+                        //       } else {
+                        //         return theme.selectedItemColor ??
+                        //             widget.darkThemeselectedItemColor;
+                        //       }
+                        //     } else {
+                        //       if (brightness == Brightness.light) {
+                        //         return theme.unselectedItemColor ??
+                        //             widget.darkThemeUnselectedItemColor;
+                        //       } else {
+                        //         return theme.unselectedItemColor ??
+                        //             widget.darkThemeUnselectedItemColor;
+                        //       }
+                        //     }
+                        //   }(),
                       ),
                     ),
                   ),
@@ -190,9 +190,9 @@ class PinterestNavBarControllerState extends ChangeNotifier {
         (value?.metrics.axis == Axis.vertical &&
             value?.scrollDelta?.sign == 1)) {
       print('hiding nav bar');
-      dy = 100;
+      dy = 150;
       notifyListeners();
-    } else if (dy == 100 &&
+    } else if (dy == 150 &&
         (value?.metrics.axis == Axis.horizontal ||
             value?.scrollDelta?.sign == -1)) {
       print('showing nav bar');

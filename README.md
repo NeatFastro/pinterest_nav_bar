@@ -2,9 +2,13 @@
 
 Pinterest app's Like bottom navigation bar.
 
+| Light theme | Dark theme |
+|---------|----------|
+|![FanBottomNavyBar Gif](https://github.com/pedromassango/bottom_navy_bar/blob/master/images/navy.gif) | ![Fix Gif](https://github.com/pedromassango/bottom_navy_bar/blob/master/images/fix.gif) |
+
 ## Getting Started
 
-Wrap you [MaterialApp] widget with [PinterestNavBar] widget
+Wrap you [MaterialApp] widget with [PinterestNavBarController] widget
 
 ```
     return PinterestNavBarController(

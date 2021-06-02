@@ -1,7 +1,7 @@
 name: pinterest_nav_bar
 description: A new Flutter package project.
-version: 0.0.1
-# homepage: https://github.com/NeatFastro/pinterest_nav_bar
+version: 0.0.1+3
+homepage: https://github.com/NeatFastro/pinterest_nav_bar
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
