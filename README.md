@@ -4,7 +4,7 @@ Pinterest app's Like bottom navigation bar.
 
 | Light theme | Dark theme |
 |---------|----------|
-|![Light theme mode video Mp4](https://github.com/NeatFastro/pinterest_nav_bar/blob/main/assets/light-theme-demo.mp4) | ![Dark theme mode video mp4](https://github.com/NeatFastro/pinterest_nav_bar/blob/main/assets/dart-theme-demo.mp4) |
+|![Light theme mode video GIF](https://github.com/NeatFastro/pinterest_nav_bar/blob/main/assets/light-theme-demo.gif) | ![Dark theme mode video GIF](https://github.com/NeatFastro/pinterest_nav_bar/blob/main/assets/dark-theme-demo.gif) |
 
 ## Getting Started
 
