@@ -12,18 +12,16 @@ class MyApp extends StatelessWidget {
     return PinterestNavBarController(
       child: MaterialApp(
         title: 'Pinterest Nav Bar Example',
-        debugShowCheckedModeBanner: false,
-        themeMode: ThemeMode.dark,
+        home: Pages(),
         theme: ThemeData(
           brightness: Brightness.light,
-          primaryColor: Colors.white,
-          accentColor: Colors.orangeAccent,
-          scaffoldBackgroundColor: Colors.grey.shade100,
-          bottomNavigationBarTheme: BottomNavigationBarThemeData(
-            backgroundColor: Colors.white,
-            selectedItemColor: Colors.orange,
-            unselectedItemColor: Colors.orange[100],
-          ),
+          // primaryColor: Colors.white,
+          // scaffoldBackgroundColor: Colors.grey.shade100,
+          // bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          //   backgroundColor: Colors.white,
+          //   selectedItemColor: Colors.orange,
+          //   unselectedItemColor: Colors.orange[100],
+          // ),
           tabBarTheme: TabBarTheme(
             indicator: BoxDecoration(
               color: Colors.black,
@@ -35,14 +33,13 @@ class MyApp extends StatelessWidget {
         ),
         darkTheme: ThemeData(
           brightness: Brightness.dark,
-          primaryColor: Colors.black,
-          accentColor: Colors.pinkAccent,
-          scaffoldBackgroundColor: Colors.black87,
-          bottomNavigationBarTheme: BottomNavigationBarThemeData(
-            backgroundColor: Colors.black,
-            selectedItemColor: Colors.pink,
-            unselectedItemColor: Colors.pink[100],
-          ),
+        //   primaryColor: Colors.black,
+        //   scaffoldBackgroundColor: Colors.black87,
+        //   bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        //     backgroundColor: Colors.black,
+        //     selectedItemColor: Colors.pink,
+        //     unselectedItemColor: Colors.pink[100],
+        //   ),
           tabBarTheme: TabBarTheme(
             indicator: BoxDecoration(
               color: Colors.white,
@@ -52,7 +49,6 @@ class MyApp extends StatelessWidget {
             unselectedLabelColor: Colors.white,
           ),
         ),
-        home: Pages(),
       ),
     );
   }
