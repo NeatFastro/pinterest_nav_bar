@@ -9,3 +9,9 @@
 ## 0.0.1+3
 
 * improved README file
+
+## 0.0.1+4
+
+* added gifs to showcase the package
+
+
